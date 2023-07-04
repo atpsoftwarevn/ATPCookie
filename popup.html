@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>ATP Cookie</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="popup.js"></script>
+</head>
+<body>
+<div id="termPanel">
+    <div class="mainTerm">
+        <p><a style="font-weight: bold;">Tiện ích ATP Cookie</a> hỗ trợ khách hàng lấy cookie đăng nhập vào các phần mềm của ATP Software.</p>
+        <p>Bạn có muốn lấy cookie không? Xác nhận điều khoản và bấm "Đồng ý" để tiếp tục.</p>
+        <input type="checkbox" id="term-check" name="term-check">
+        <label for="term-check" style="font-size: 15px"> Tôi đã đọc và đồng ý với các <a style="cursor: pointer;color: blue" id="policy-page">"Chính sách bảo mật"</a> của ATP Cookie.</label><br>
+        <div class="term-accept-btn">
+            <button id="accept-term">Đồng ý</button>
+            <button id="disagree-term">Không đồng ý</button>
+        </div>
+    </div>
+</div>
+<div id="getCookiePanel" style="display: none;">
+    <div class="mainCookie">
+        <div class="row">
+            <label id='url-cookie-current'></label>
+            <label style="display:block;margin-bottom: 3px;">Cookie:</label>
+            <textarea id="cookie-result" rows="5"></textarea>
+            <button id="btn-import-cookie" type="button" style="float:left;" class="btn btn-import">Nhập Cookie</button>
+            <button id="btn-save-cookie" type="button"  class="btn btn-save-cookie">Lưu Cookie</button>
+        </div>
+        <div class="row">
+            <button id="btn-cookie-logout" type="button" class="btn btn-login-new">Đăng Nhập Facebook Mới</button>
+            <label style="margin-top: 10px;display: inline-block;margin-bottom: 5px;">Chọn Cookie Đã Lưu:</label>
+            <div class="row" id="list_cookie">
+
+            </div>
+        </div>
+        <img src="assets/image/download.png" style="width: 24px;margin-right: 5px;vertical-align: bottom;"></a>
+        <a title="Download all cookie file" href="javascript:void(0)" id='btn-download-cookie' style="color: #206eab;">
+            Tải xuống toàn bộ cookie đã lưu
+        </a>
+    </div>
+    <p class="note">
+        <a style="font-weight: bold;">Tiện ích ATP Cookie</a> hỗ trợ khách hàng lấy cookie đăng nhập vào các phần mềm của ATP Software.
+    </p>
+</div>
+
+<div class="footer">
+    <div>
+        <h3 class="text-footer">
+            <a href="https://atpsoftware.vn/" target="blank">
+                <img src="assets/image/icon-cookie-128.png" style="width: 24px;margin-right: 5px;vertical-align: bottom;"></a>
+            ATP Cookie v1.3 <a class="atpsoft-text">by ATPSoftware</a>
+        </h3>
+    </div>
+    </a>
+</div>
+
+</body>
+</html>

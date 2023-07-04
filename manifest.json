@@ -1,0 +1,21 @@
+{
+   "action": {
+      "default_icon": "assets/image/icon-cookie-128.png",
+      "default_popup": "popup.html",
+      "default_title": "ATP Cookie"
+   },
+   "author": "ATPSoftware",
+   "description": "Tiện ích ATP Cookie dùng để trích xuất cookie từ trình duyệt, giúp người dùng đăng nhập vào các phần mềm của ATP Software.",
+   "icons": {
+      "128": "assets/image/icon-cookie-128.png",
+      "16": "assets/image/icon-cookie-16.png",
+      "48": "assets/image/icon-cookie-48.png"
+   },
+   "manifest_version": 3,
+   "name": "ATP Cookie",
+   "offline_enabled": true,
+   "permissions": [ "cookies", "tabs", "storage", "scripting"],
+   "host_permissions": [ "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3"
+}
